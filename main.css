@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+} 
+.name{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.box:hover .name {
+    opacity: 1;
+}
+  
+/* Responsive */
+@media (min-width: 200px) and (max-width: 480px){
+    header .top{
+        padding: 10px;
+    }
+    header .top .menu-icon{
+        display: block;
+    }
+
+    nav{
+        position: fixed !important;
+        width: 0%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        position: relative;
+        overflow-x: hidden;
+        transition: 0.3s;
+        padding: 0px !important;
+    }
+    nav .close-menu{
+        display: block;
+    }
+    nav .menu{
+        width: 100%;
+        padding-top: 60px;
+    }
+    nav .menu ul li{
+        width: 100%;
+        padding-left: 30px;
+        margin-top: 10px;
+    }
+    
+
+}
+@media (min-width: 481px) and (max-width: 767px){
+    header .top{
+        padding: 10px;
+    }
+    header .top .menu-icon{
+        display: block;
+    }
+
+    nav{
+        position: fixed !important;
+        width: 0%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        position: relative;
+        overflow-x: hidden;
+        transition: 0.3s;
+        padding: 0px !important;
+    }
+    nav .close-menu{
+        display: block;
+    }
+    nav .menu{
+        width: 100%;
+        padding-top: 60px;
+    }
+    nav .menu ul li{
+        width: 100%;
+        padding-left: 30px;
+        margin-top: 10px;
+    }
+    
+
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    header .top{
+        padding: 10px;
+    }
+    header .top .menu-icon{
+        display: block;
+    }
+
+    nav{
+        position: fixed !important;
+        width: 0%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        position: relative;
+        overflow-x: hidden;
+        transition: 0.3s;
+        padding: 0px !important;
+    }
+    nav .close-menu{
+        display: block;
+    }
+    nav .menu{
+        width: 100%;
+        padding-top: 60px;
+    }
+    nav .menu ul li{
+        width: 100%;
+        padding-left: 30px;
+        margin-top: 10px;
+    }
+
+}

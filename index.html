@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" href="./images/logo.png">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- owl slider -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+        referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <title>HOTEL</title>
+</head>
+
+<body class="bg-gray-600">
+    <div class="left fixed top-[40%] z-50 left-10 hidden xl:block">
+        <div class=""><video loop autoplay muted controls autobuffer playsinline src="./images/Video.mp4" type="video/mp4" class="rounded-2xl"></video></div>
+    </div>
+    <div class="left fixed top-[23%] z-50 right-10 hidden xl:block">
+        <div class=""><video loop autoplay muted controls autobuffer playsinline src="./images/video2.mp4" type="video/mp4" class="rounded-2xl"></video></div>
+    </div>
+    <!-- section head -->
+    <section class="sticky top-0 z-10">
+        <header class="bg-gray-800 w-full">
+            <div class="top max-w-7xl m-auto flex justify-between items-center grid grid-cols-12 p-2">
+                <!-- logo -->
+                <div class="logo xl:col-span-2 lg:col-span-2 md:col-span-2 col-span-4">
+                    <a href="index.html">
+                        <img src="./images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <!-- marquee -->
+                <div class="text-gray-100 col-span-8 xl:block lg:block hidden px-6">
+                    <div class="flex items-center gap-2 px-8">
+                        <i class="bi bi-volume-up text-2xl"></i>
+                        <marquee behavior="scroll" direction="left" scrollamount="5" class="rounded-full p-1 bg-gray-900 text-sm">ATTENTION!!! We assure you that all winning bets will be fully paid without exeception</marquee>
+                    </div>
+                </div>
+                <!-- login -->
+                <div class="text-gray-100 xl:col-span-2 lg:col-span-2 md:col-span-10 col-span-8">
+                    <div class="flex justify-end items-center gap-2">
+                        <a href="#" class="py-0.5 px-2 xl:px-5 lg:px-6 md:px-6 border rounded-lg hover:bg-yellow-500 hover:text-gray-800 duration-300">Login</a>
+                        <a href="#" class="py-0.5 px-2 xl:px-5 lg:px-6 md:px-6 border rounded-lg hover:bg-yellow-500 hover:text-gray-800 duration-300">Register</a>
+                    </div>
+                </div>
+                
+                <div class="menu-icon hidden" onclick="OpenNav()">
+                    <i class="fa fa-bars text-2xl text-gray-100"></i>
+                </div>
+            </div>
+        </header>
+        <!-- navbar -->
+        <nav class="xl:bg-purple-800 bg-gray-800 py-4" id="Nav">
+            <div class="menu max-w-7xl m-auto">
+                <div class="close-menu absolute right-2 top-5 hidden" onclick="CloseNav()">
+                    <i class="fa fa-times text-3xl text-gray-100 p-4"></i>
+                </div>
+                <ul class="flex flex-wrap gap-4 justify-center items-center text-gray-100">
+                    <li class="inline-block flex items-center px-1 rounded-full hover:bg-yellow-400 hover:text-gray-800 duration-300">
+                        <img src="./images/1a.png" class="w-10">
+                        <a href="#" class="text-md text-gay-900">HOME</a>
+                    </li>
+                    <li class="inline-block flex items-center px-1 rounded-full hover:bg-yellow-400 hover:text-gray-800 duration-300">
+                        <img src="./images/2a.png" class="w-10">
+                        <a href="#" class="text-md text-gay-900">SLOTS</a>
+                    </li>
+                    <li class="inline-block flex items-center px-1 rounded-full hover:bg-yellow-400 hover:text-gray-800 duration-300">
+                        <img src="./images/3a.png" class="w-10">
+                        <a href="#" class="text-md text-gay-900">FISHING</a>
+                    </li>
+                    <li class="inline-block flex items-center px-1 rounded-full hover:bg-yellow-400 hover:text-gray-800 duration-300">
+                        <img src="./images/4a.png" class="w-10">
+                        <a href="#" class="text-md text-gay-900">LOTTERY</a>
+                    </li>
+                    <li class="inline-block flex items-center px-1 rounded-full hover:bg-yellow-400 hover:text-gray-800 duration-300">
+                        <img src="./images/5a.png" class="w-10">
+                        <a href="#" class="text-md text-gay-900">LIVE CASINO</a>
+                    </li>
+                    <li class="inline-block flex items-center px-1 rounded-full hover:bg-yellow-400 hover:text-gray-800 duration-300">
+                        <img src="./images/6a.png" class="w-10">
+                        <a href="#" class="text-md text-gay-900">SPORTS</a>
+                    </li>
+                    <li class="inline-block flex items-center px-1 rounded-full hover:bg-yellow-400 hover:text-gray-800 duration-300">
+                        <img src="./images/7a.png" class="w-10">
+                        <a href="#" class="text-md text-gay-900">ARCADE</a>
+                    </li>
+                    <li class="inline-block flex items-center px-1 rounded-full hover:bg-yellow-400 hover:text-gray-800 duration-300">
+                        <img src="./images/8a.png" class="w-10">
+                        <a href="#" class="text-md text-gay-900">PROMOTIONS</a>
+                    </li>
+                    <li class="inline-block flex items-center px-1 rounded-full hover:bg-yellow-400 hover:text-gray-800 duration-300">
+                        <img src="./images/9a.png" class="w-10">
+                        <a href="#" class="text-md text-gay-900">REWARDS</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!-- marquee -->
+    <div class="text-gray-100 col-span-8  xl:hidden lg:hidden">
+        <div class="flex items-center gap-2 px-4">
+            <i class="bi bi-volume-up text-2xl"></i>
+            <marquee behavior="scroll" direction="left" scrollamount="5" class="rounded-full p-1 bg-gray-900 text-sm">ATTENTION!!! We assure you that all winning bets will be fully paid without exeception</marquee>
+        </div>
+    </div>
+    <!-- section slider -->
+    <section class="max-w-7xl m-auto px-4">
+        <div class="slide">
+            <div class="owl-carousel">
+                <div class="item">
+                    <img src="./images/Banner03.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="./images/Banner04.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="./images/Banner05.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="./images/Banner06.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section body -->
+    <section class="max-w-7xl m-auto px-4">
+        <div class="grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-4">
+            <div class="bg-gray-800 rounded-xl">
+                <div class="text-2xl text-yellow-400 font-bold text-center p-2 bg-gray-500 rounded-t-xl">HOT PROMOTION</div>
+                <div class="grid grid-cols-5 sm:grid-cols-3 md:grid-cols-5 lg-grid-cols-5 xl:grid-cols-5  p-4">
+                    <div class="text-gray-100 flex flex-col justify-center items-center transition hover:scale-125 duration-300 cursor-pointer">
+                        <img src="./images/1.png" class="w-14">
+                        <span class="text-center">Player</span>
+                    </div>
+                    <div class="text-gray-100 flex flex-col justify-center items-center transition hover:scale-125 duration-300 cursor-pointer">
+                        <img src="./images/2.png" class="w-14">
+                        <span class="text-center">Bonus</span>
+                    </div>
+                    <div class="text-gray-100 flex flex-col justify-center items-center transition hover:scale-125 duration-300 cursor-pointer">
+                        <img src="./images/3.png" class="w-14">
+                        <span class="text-center">Member</span>
+                    </div>
+                    <div class="text-gray-100 flex flex-col justify-center items-center transition hover:scale-125 duration-300 cursor-pointer">
+                        <img src="./images/4.png" class="w-14">
+                        <span class="text-center">Slots Bonus</span>
+                    </div>
+                    <div class="text-gray-100 flex flex-col justify-center items-center transition hover:scale-125 duration-300 cursor-pointer">
+                        <img src="./images/5.png" class="w-14">
+                        <span class="text-center">Sunday</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="bg-gray-800 rounded-xl">
+                <div class="text-2xl text-yellow-400 font-bold text-center p-2 bg-gray-500 rounded-t-xl">BEST SUPPORT</div>
+                <div class="grid grid-cols-5 sm:grid-cols-3 md:grid-cols-5 lg-grid-cols-5 xl:grid-cols-5 p-4">
+                    <div class="text-gray-100 flex flex-col justify-center items-center transition hover:scale-125 duration-300 cursor-pointer">
+                        <img src="./images/6.png" class="w-14">
+                        <span class="text-center">Agent</span>
+                    </div>
+                    <div class="text-gray-100 flex flex-col justify-center items-center transition hover:scale-125 duration-300 cursor-pointer">
+                        <img src="./images/7.png" class="w-14">
+                        <span class="text-center">Message</span>
+                    </div>
+                    <div class="text-gray-100 flex flex-col justify-center items-center transition hover:scale-125 duration-300 cursor-pointer">
+                        <img src="./images/8.png" class="w-14">
+                        <span class="text-center">Service</span>
+                    </div>
+                    <div class="text-gray-100 flex flex-col justify-center items-center transition hover:scale-125 duration-300 cursor-pointer">
+                        <img src="./images/9.png" class="w-14">
+                        <span class="text-center">Deposit</span>
+                    </div>
+                    <div class="text-gray-100 flex flex-col justify-center items-center transition hover:scale-125 duration-300 cursor-pointer">
+                        <img src="./images/10.png" class="w-14">
+                        <span class="text-center">Withdraw</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- hot game -->
+        <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-5 mt-10">
+            <div class="box hover:opacity-100 relative cursor-pointer transition hover:scale-100 duration-300">
+                <div class="transition transform hover:scale-110 duration-300 opacity-100 opacity-1 hover:opacity-50 block"><img src="./images/bacarat.png"></div>
+                <div class="name absolute opacity-0 duration-500 ">
+                <i class="bi bi-play-circle text-5xl text-yellow-400 rounded-full"></i>
+                </div>
+            </div>
+            <div class="box relative cursor-pointer transition hover:scale-100 duration-300">
+                <div class="transition transform hover:scale-110 duration-300 opacity-100 opacity-1 hover:opacity-30 block"><img src="./images/baucua.png"></div>
+                
+                <div class="name absolute opacity-0 duration-500">
+                <i class="bi bi-play-circle text-5xl text-yellow-400 rounded-full"></i>
+                </div>
+            </div>
+            <div class="box relative cursor-pointer transition hover:scale-100 duration-300">
+                <div class="transition transform hover:scale-110 duration-300 opacity-100 opacity-1 hover:opacity-30 block"><img src="./images/dragontiger.png"></div>
+                <div class="name absolute opacity-0 duration-500">
+                <i class="bi bi-play-circle text-5xl text-yellow-400 rounded-full"></i>
+                </div>
+            </div>
+            <div class="box relative cursor-pointer transition hover:scale-100 duration-300">
+                <div class="transition transform hover:scale-110 duration-300 opacity-100 opacity-1 hover:opacity-30 block"><img src="./images/Fruit.png"></div>
+                <div class="name absolute opacity-0 duration-500">
+                <i class="bi bi-play-circle text-5xl text-yellow-400 rounded-full"></i>
+                </div>
+            </div>
+            <div class="box relative cursor-pointer transition hover:scale-100 duration-300">
+                <div class="transition transform hover:scale-110 duration-300 opacity-100 opacity-1 hover:opacity-30 block"><img src="./images//slots2.png"></div>
+                <div class="name absolute opacity-0 duration-500">
+                <i class="bi bi-play-circle text-5xl text-yellow-400 rounded-full"></i>
+                </div>
+            </div>
+            <div class="box relative cursor-pointer transition hover:scale-100 duration-300">
+                <div class="transition transform hover:scale-110 duration-300 opacity-100 opacity-1 hover:opacity-30 block"><img src="./images/taixiu.png"></div>
+                <div class="name absolute opacity-0 duration-500">
+                <i class="bi bi-play-circle text-5xl text-yellow-400 rounded-full"></i>
+                </div>
+            </div>
+            <div class="box relative cursor-pointer transition hover:scale-100 duration-300">
+                <div class="transition transform hover:scale-110 duration-300 opacity-100 opacity-1 hover:opacity-30 block"><img src="./images/xoso.png"></div>
+                <div class="name absolute opacity-0 duration-500">
+                <i class="bi bi-play-circle text-5xl text-yellow-400 rounded-full"></i>
+                </div>
+            </div>
+            
+        </div>
+        <!-- gift file -->
+        <div class="mt-8 flex justify-center items-center">
+            <!-- <img src="./images/V1.gif"> -->
+            <!-- <video loop autoplay muted controls autobuffer playsinline src="./images/v1.mp4" type="video/mp4"></video> -->
+            <video loop autoplay muted controls autobuffer playsinline src="./images/Banner animation.mp4" type="video/mp4" class="rounded-xl"></video>
+        </div>
+        <!-- Best live... -->
+        <div class="mt-10">
+            <span class="text-3xl text-yellow-400 font-bold">Best Live</span>
+            <div class="grid grid-cols-2 xl:grid-cols-6 lg:grid-cols-4 md:grid-cols-3 gap-4 mt-10">
+                <div class="relative rounded-xl transition hover:scale-95 duration-300 cursor-pointer">
+                    <img src="./images/p1.png" class="rounded-2xl">
+                    <div class="absolute flex justify-center items-center w-full h-full text-lg top-0 opacity-0 hover:opacity-100 duration-500"><span class=" py-3 px-2 rounded-full bg-yellow-400 text-gray-800 font-semibold animate-bounce">LIVE</span></div>
+                </div>
+                <div class="relative rounded-xl transition hover:scale-95 duration-300 cursor-pointer">
+                    <img src="./images/p2.png" class="rounded-2xl">
+                    <div class="absolute flex justify-center items-center w-full h-full text-lg top-0 opacity-0 hover:opacity-100 duration-500"><span class=" py-3 px-2 rounded-full bg-yellow-400 text-gray-800 font-semibold animate-bounce">LIVE</span></div>
+                </div>
+                <div class="relative rounded-xl transition hover:scale-95 duration-300 cursor-pointer">
+                    <img src="./images/p3.png" class="rounded-2xl">
+                    <div class="absolute flex justify-center items-center w-full h-full text-lg top-0 opacity-0 hover:opacity-100 duration-500"><span class=" py-3 px-2 rounded-full bg-yellow-400 text-gray-800 font-semibold animate-bounce">LIVE</span></div>
+                </div>
+                <div class="relative rounded-xl transition hover:scale-95 duration-300 cursor-pointer">
+                    <img src="./images/p4.png" class="rounded-2xl">
+                    <div class="absolute flex justify-center items-center w-full h-full text-lg top-0 opacity-0 hover:opacity-100 duration-500"><span class=" py-3 px-2 rounded-full bg-yellow-400 text-gray-800 font-semibold animate-bounce">LIVE</span></div>
+                </div>
+                <div class="relative rounded-xl transition hover:scale-95 duration-300 cursor-pointer">
+                    <img src="./images/p5.png" class="rounded-2xl">
+                    <div class="absolute flex justify-center items-center w-full h-full text-lg top-0 opacity-0 hover:opacity-100 duration-500"><span class=" py-3 px-2 rounded-full bg-yellow-400 text-gray-800 font-semibold animate-bounce">LIVE</span></div>
+                </div>
+                <div class="relative rounded-xl transition hover:scale-95 duration-300 cursor-pointer">
+                    <img src="./images/p6.png" class="rounded-2xl">
+                    <div class="absolute flex justify-center items-center w-full h-full text-lg top-0 opacity-0 hover:opacity-100 duration-500"><span class=" py-3 px-2 rounded-full bg-yellow-400 text-gray-800 font-semibold animate-bounce">LIVE</span></div>
+                </div>
+            </div>
+        </div>
+        <!-- text -->
+        <div class="mt-10">
+            <div class="text text-gray-100 xl:bg-gray-800 lg:bg-gray-800 xl:p-4 lg:p-4 rounded-xl">
+                <span class="text-2xl xl:text-4xl font-bold text-yellow-400 py-2 block">Play at the Best Online Casino in the Philippines</span>
+                <p class="mt-4">Have you been looking for an online place where you could enjoy some of the best online casino games in the Philippines? Whereas we all know that the Philippines is a globally renowned place when it comes to gambling, online betting has seen a substantial rise in the past few years in the Philippines. Therefore, the Philippines' online gambling industry has become one of the biggest in Southeast Asia. <br>
+                People now prefer to look for play in the trusted and licensed online casinos available in the country.</p>
+                <p class="mt-4">So, in this extreme need of a reliable online gambling place, <span class="inline text-yellow-400 py-2 block">Phfun</span> has brought you the best online casino after extensive research and combined efforts. With a mission to provide complete online casino games and make them more accessible and convenient for online casino players, we will offer you everything from Sportsbooks, E-sports betting, online slots, casino games, poker, lottery, fishing game, online sabong, and much more.</p>
+
+                <!-- online casino... -->
+                <span class="text-2xl xl:text-4xl lg:text-4xl md:text-4xl font-bold text-yellow-400 py-2 block">Online casino gaming in the Philippines</span>
+                <p class="mt-4">Several options are available to you in the Philippines with Phfun if you want to play casino games. You will enjoy them all, whether playing slots, roulette, or blackjack. You can gamble at either a land-based casino or an online casino.</p>
+                <p class="mt-4">Land-based casinos are physical establishments. There are many gaming machines and tables available for client use. Naturally, some smaller businesses specialize in casino games. But some bigger ones also have dining establishments, entertainment venues, and hotels. Online casinos are digital. The result is that they may be accessed from anywhere using a laptop or a smartphone.</p>
+                
+                <!-- why should... -->
+                <span class="text-2xl xl:text-4xl lg:text-4xl md:text-4xl font-bold text-yellow-400 py-2 block">Why should you play online?</span>
+                <p>Online casinos are the go-to choice for many Filipino gamblers. They are more accessible and open for business around the clock. With mobile compatibility, you may play your preferred casino games while on the go and from the comfort of your home. You only need a reliable internet connection to use the exponentially greater and better range of games. Most crucial, though, is that Phfun online casinos will offer you a range of bonuses and incentives to increase your bankroll.</p>
+                
+                <span class="text-yellow-400 py-2 block">Is Online Gambling Legal in the Philippines</span>
+                <p class="mt-4">The majority of gambling activities are legal and well-controlled in the Philippines. The Philippine Amusement and Gaming Corporation (PAGCOR) is the nation's government-owned division that oversees the gaming industry. Of course, this company manages a number of its land-based casinos. However, it also controls casinos run by independent contractors. In addition, PAGCOR controls the online gambling sector. As a result, this organization issues licenses to businesses wishing to conduct online business in the Philippines.</p>
+                <p class="mt-4">There are relatively few restrictions on gambling. It is because of their appeal to tourists, gaming, and the enormous casino resorts that have been opening recently. Since gambling encourages tourism, it is tolerated in the nation. Additionally, it boosts the local, state, and federal economies and generates jobs.</p>
+                
+                <span class="text-yellow-400 py-2 block">An Overview of Philippine Online Casinos</span>
+                <p>You've arrived in the right location if you're a beginner in online gambling. We provide a wealth of information to understand better how online gambling operates. Even if you're an advanced player, there are still many suggestions for how to get better. For everybody, we have a lot of valuable materials here.</p>
+                <p class="mt-4">You can read our in-depth game guides and reviews of online casinos. In addition, we have some pointers for maximizing your gambling experience. As a result, once you've read a few of our suggestions, you'll be an expert gambler! Whether you're an absolute beginner, an experienced regular or somewhere in between, you'll find our site helpful. We'll teach you the ropes if you stick with us.</p>
+
+                <!-- game with... -->
+                <span class="text-2xl xl:text-4xl lg:text-4xl md:text-4xl font-bold text-yellow-400 py-2 block">Games with Phfun Online Casinos</span>
+                <p class="mt-4">There are typically over a hundred casino games available at Phfun online casino, and occasionally there are even more than a thousand. Several categories can be created from these:</p>
+                <p class="mt-4"><span class="text-blue-400">Slot</span> - Slot machines are the most popular game at Phfun online casinos. Reels should be spun, and you will be rewarded if sufficient symbols appear in a winning combination. There are many different themes and additional features available for slots. While some online slots offer bonus rounds or free spins, others have wild symbols.</p>
+
+                <p class="mt-4"><span class="text-blue-400">Table Games</span> - Here, you'll discover classic casino games, including baccarat, poker, blackjack, and roulette. Various variations of roulette are available in addition to these card games.</p>
+
+                <p class="mt-4"><span class="text-blue-400">Live Dealer Games</span> – You may play these real-time casino games almost anywhere. Numerous online casinos in the Philippines provide live versions of games like blackjack, baccarat, roulette, etc.</p>
+
+                <p class="mt-4"><span class="text-blue-400"> Other Games </span> - Online casinos in the Philippines will provide a wide range of choices in addition to the games listed above. From scratch cards, virtual sports, mini-games, bingo, and dice games (craps and sic bo) to online sabong, there is something for everyone.</p>
+
+                <p class="mt-4"><span class="text-blue-400">SportsBetting</span> - Due to its increased demand, sport online betting is now available at Phfun online casinos. You can wager on a variety of international sporting events using such services. Sports, including rugby, soccer, basketball, tennis, and golf, are highly popular. But in addition to this, you can also wager on things like e-Sports (video game competitions), virtual sports, politics, entertainment, and current events.</p>
+
+                <p class="mt-4">It's simple to gamble on sports. Decide on an event, make a prediction, and put a wager. Before waiting for the outcome, you should choose the sort of wager and its size. The website will, of course, display your potential payout amount in case your bet is successful. On the other hand, the odds and the stake size determine how much you stand to win. Furthermore, the odds for a given wager can change from one website to another.</p>
+
+                <!-- play at... -->
+                <span class="text-2xl xl:text-4xl lg:text-4xl md:text-4xl font-bold text-yellow-400 py-2 block">Play at the most trustworthy Online Casino in the Philippines</span>
+                <p class="mt-4">At Phfun, we only promote trustworthy casinos because we want you to gamble online safely. A valid license serves as proof that the casino is operating honestly. In other words, you can trust a casino if it has a license. Thanks to licensing agencies, Filipino-friendly online casinos are governed. You may be guaranteed that your gambling experience will be safe and fun.</p>
+                <p class="mt-4">But if you're at an online casino and something doesn't look right, you should go elsewhere instead. Also, if a casino has a bad reputation and many negative reviews, it's probably true. So to avoid any trouble, look at our library of trusted online casinos and pick a safe destination.</p>
+
+                <!-- conclusion... -->
+                <span class="text-2xl xl:text-4xl lg:text-4xl md:text-4xl font-bold text-yellow-400 py-2 block">Conclusion</span>
+                <p class="mt-4">It can be a lot of fun to gamble online. You could also make money from it if you're fortunate and have some skills. Because you may win cash and have fun simultaneously, Phfun online casinos are so popular. Particularly in the Philippines, where there is a lot of regulation to keep players safe, the rules governing gambling are pretty lenient.</p>
+
+                <p class="mt-4">Several alternatives are available to Filipinos who want to gamble with their hard-earned cash at online casinos. Currently, hundreds of reputable online casinos are available, and more are being added regularly to Phfun online casino platform. After learning everything there is to know about online gambling in the Philippines, we encourage you to read some of our casino reviews. We only endorse the top Philippines-based online casinos!</p>
+
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-gray-800 mt-5 text-gray-400">
+        <div class="main max-w-7xl m-auto px-4 py-10">
+            <ul class="text-yellow-600">
+                <li class="inline-block">
+                    Slots |
+                </li>
+                <li class="inline-block">
+                    Fishing |
+                </li>
+                <li class="inline-block">
+                    Live Casino |
+                </li>
+                <li class="inline-block">
+                    Sport |
+                </li>
+                <li class="inline-block">
+                    Arcade |
+                </li>
+                <li class="inline-block">
+                    Lottery |
+                </li>
+                <li class="inline-block">
+                    Taixiu |
+                </li>
+            </ul>
+            <p class="text-lg mt-2">offers live baccarat With the best online casino sites in 2021 for a better experience of players in casino games (Game Casino) international standards.</p>
+            <p class="text-lg mt-2">© 2023 PHFUN All rights reserved</p>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+</body>
+</html>
